@@ -6,4 +6,5 @@ before_install:
   - docker build -t firstrepo -f Dockerfile.dev .
 
 script:
+  docker login -u saipriyanew2018 -p $aipriya123$
   - docker run -e CI=true saipriyanew2018/firstrepo npm run test
