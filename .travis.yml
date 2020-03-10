@@ -4,7 +4,7 @@ services:
 env:
   global:
     - USER_NAME=sairohan
-    - USER_PASSWORD=Agni123$$
+    - USER_PASSWORD=$aipriya123$
 
 before_install:
   - docker login -u "$USER_NAME" -p "$USER_PASSWORD"
