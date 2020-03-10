@@ -3,8 +3,8 @@ services:
   - docker
 env:
   global:
-    - USER_NAME=saipriyanew2018
-    - USER_PASSWORD=$aipriya123$
+    - USER_NAME=sairohan
+    - USER_PASSWORD=Agni123$$
 
 before_install:
   - docker login -u "$USER_NAME" -p "$USER_PASSWORD"
