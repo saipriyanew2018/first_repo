@@ -1,8 +1,13 @@
 sudo: required
 services:
   - docker
+env:
+  global:
+    - USER_NAME=saipriyanew2018
+    - USER_PASSWORD=$aipriya123$
 
 before_install:
+  - docker login -u "$USER_NAME" -p "$USER_PASSWORD"
   - docker build -t firstrepo -f Dockerfile.dev .
 
 script:
